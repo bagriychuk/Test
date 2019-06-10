@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #181818e3;
+  height: 60px;
+}
+header img {
+  width: 60px;
+  height: 60px;
+  margin: 25px;
+  border-radius: 50%;
+  background-color: #18181848;
+  transition: all 0.7s ease;
+}
+header img:hover {
+  transform: rotate(195deg);
+}
+.sign {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 400px) {
+  header img {
+    z-index: 1;
+  }
+  header img:hover {
+    transform: rotate(245deg);
+  }
+  .sign {
+    padding-top: 80px;
+  }
+  .sign:hover {
+    transition: none;
+    transform: none;
+  }
+  .sign .login_input {
+    width: 250px;
+    margin: 20% auto;
+  }
+  .registration_2 {
+    margin-top: 100px;
+  }
+}
+.log_entry_page {
+  display: flex;
+  justify-content: center;
+}
+.registration_2 {
+  display: flex;
+  justify-content: center;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 300px;
+  border: 1px solid #c0c0c0;
+  background-color: #c8c8c8;
+  transition: all 0.4s ease-out;
+  text-align: center;
+}
+.item .choise_button {
+  background-color: #c8c8c8;
+}
+.item .choise_button button.GO:first-child {
+  width: 80px;
+}
+.item .login_input {
+  width: 250px;
+  margin: 15% auto;
+  background-color: #c8c8c8;
+}
+.item .GO {
+  width: 150px;
+  margin: 15px auto;
+  text-transform: uppercase;
+}
+.item .email {
+  width: 100%;
+}
+.item .pass {
+  width: 100%;
+  margin-top: 1%;
+}
+.item .login_input_password {
+  background-color: #c8c8c8;
+}
+.item .pass_logIN {
+  width: 250px;
+  margin: 25% 20% 0 20%;
+}
+.item .reg {
+  background-color: #c8c8c8;
+}

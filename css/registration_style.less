@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 247, 247);
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #181818e3;
+    height: 60px;
+    img {
+        width: 60px;
+        height: 60px;
+        margin: 25px;
+        border-radius: 50%;
+        background-color: #18181848;
+        transition: all 0.7s ease;
+        &:hover {
+            transform: rotate(195deg);
+        }
+    }
+}
+.sign {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 400px) {
+    header {
+        img {
+            z-index: 1;
+            &:hover {
+                transform: rotate(245deg);
+            }
+        }
+    }
+    .sign {
+        padding-top: 80px;
+        &:hover {
+            transition: none;
+            transform: none;
+        }
+        .login_input {
+            width: 250px;
+            margin: 20% auto;
+        }
+    }
+    .registration_2 {
+        margin-top: 100px;
+    }
+}
+.log_entry_page{
+    display: flex;
+    justify-content: center;
+}
+.registration_2 {
+    display: flex;
+    justify-content: center;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 300px;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: rgb(200, 200, 200);
+    transition: all 0.4s ease-out;
+    text-align: center;
+    .choise_button {
+        background-color: rgb(200, 200, 200);
+    }
+    .choise_button button.GO:first-child {
+        width: 80px;
+    }
+    .login_input {
+        width: 250px;
+        margin: 15% auto;
+        background-color: rgb(200, 200, 200);
+    }
+    .GO {
+        width: 150px;
+        margin: 15px auto;
+        text-transform: uppercase;
+    }
+    .email {
+        width: 100%;
+    }
+    .pass {
+        width: 100%;
+        margin-top: 1%;
+    }
+    .login_input_password {
+        background-color: rgb(200, 200, 200);
+    }
+    .pass_logIN {
+        width: 250px;
+        margin: 25% 20% 0 20%;
+      }
+    .reg{
+        background-color: rgb(200, 200, 200);
+    }
+
+}
